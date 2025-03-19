@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>web dong</title>
+    </head>
+    <body>
+        nhập tên bạn là: <input id="input" value=""><br>
+        <button onclick="xin_chao()">ok</button>
+        <div id="loi_chao"></div>
+        <script>
+            var xin_chao= function() {
+                var ten= document.getElementById("input").value
+                var loi_chao= "xin chào " + ten
+                document.write(loi_chao)
+            }
+        </script>
+    </body>
+</html>

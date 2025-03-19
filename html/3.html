@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trang Cài Đặt</title>
+  <style>
+    /* CSS để định dạng giao diện, bạn có thể tùy chỉnh theo ý muốn */
+    .menu {
+      background-color: #f1f1f1;
+      overflow: hidden;
+    }
+
+    .menu a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .menu a:hover {
+      background-color: #ddd;
+    }
+
+    .form-container {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu">
+    <a href="#">My Profile</a>
+    <a href="#">Notifications</a>
+    <a href="#">Language</a>
+    <a href="#">General settings</a>
+    <a href="#">Theme</a>
+    <a href="#">Privacy</a>
+  </div>
+
+  <div class="form-container">
+    <form>
+      <label for="uname"><b>Username or Email</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="security-question"><b>Security Question</b></label>
+      <input type="text" placeholder="What Was Your First Pet's Name?" name="security-question" required>
+
+      <label for="answer"><b>Answer</b></label>
+      <input type="text" placeholder="Enter Answer" name="answer" required>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+</body>
+</html>

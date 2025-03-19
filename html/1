@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>example03.html</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<a href="#css">CSS</a>
+	<a href="#mysql">MYSQL</a>
+	<a href="#php">PHP</a>
+    file:///D:/laptrinhweb1280/html/test1.html
+	<h1 id="html">1) TÀI LIỆU HỌC HTML</h1>
+
+	. . . .
+
+	<h1 id="css">2) TÀI LIỆU HỌC CSS</h1>
+
+	. . . .
+
+	<h1 id="js">3) TÀI LIỆU HỌC JAVASCRIPT</h1>
+
+	. . . .
+
+	<h1 id="mysql">4) TÀI LIỆU HỌC MYSQL</h1>
+
+	. . . .
+
+	<h1 id="php">5) TÀI LIỆU HỌC PHP</h1>
+
+	. . . .
+
+</body>
+</html>

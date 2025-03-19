@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>secret message</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="web_dong.css">
+  <style>
+    .content {
+      display: none; /* Ẩn nội dung mặc định */
+    }
+  </style>
+</head>
+<body>
+
+  <div id="button-container" class="container">
+  <div class="banner"></div><br>
+  <div class="heart-container"></div>
+  <button onclick="showContent('content1')" class="nut_chinh">Đặt mật khẩu</button>
+  <button onclick="showContent('content2')" class="nut_chinh">Nhập mật khẩu</button>
+  </div>
+  <div id="content1" class="content">
+    <div class="dinh_dang_chon">
+    <h2>Đặt mật khẩu</h2>
+    <input id="mk_dat" type="text" value="" ><br>
+    <div>
+      <h2>Nhập lời chúc/tỏ tình</h2>
+      
+      <!-- Chọn kiểu nhập -->
+        <div class="radio-group">
+      <label>
+          <input type="radio" name="mode" value="preset" checked>
+          Chọn mẫu có sẵn
+          
+      </label></div>
+      <div class="radio-group">
+      <label>
+          <input type="radio" name="mode" value="custom">
+          Tự nhập nội dung
+      </label></div>
+      <div class="radio-group">
+      <label>
+          <input type="radio" name="mode" value="both">
+          Kết hợp cả hai
+      </label></div>
+      
+      <!-- Ô nhập tên (ban đầu ẩn) -->
+  <input id="ten" type="text" placeholder="Nhập tên..." style="display: none;">
+      <br><br>
+      <!-- Danh sách mẫu câu -->
+      <select id="presetMessages">
+          <option value="Chúc em luôn vui vẻ và hạnh phúc!">Chúc em luôn vui vẻ và hạnh phúc!</option>
+          <option value="Anh sẽ luôn ở bên em, mãi mãi!">Anh sẽ luôn ở bên em, mãi mãi!</option>
+          <option value="Em là người đặc biệt nhất trong lòng anh!">Em là người đặc biệt nhất trong lòng anh!</option>
+      </select>
+  
+      <br><br>
+  
+      <!-- Ô nhập nội dung -->
+      <textarea id="customMessage" placeholder="Nhập lời chúc của bạn..." type="text" style="display:none;"></textarea>
+  
+      <br><br>
+  
+      <button id="submitButton" onclick="ket_qua()" class="nut_phu">Gửi lời chúc</button>
+  
+      <p id="output"></p>
+      <script src="script.js"></script>
+    </div></div></div></div>
+  <div id="content2" class="content">
+    <div class="dinh_dang_chon">
+    <h2>Nhập mật khẩu</h2>
+    <input id="mk_nhap" type="text" value=""><br>
+    <button onclick="kiem_tra()" class="nut_phu">đã nhập xong mk</button>
+    <div id="outputDiv"></div>
+    <script src="script.js"></script>
+  </div></div></div>
+</body>
+</html>

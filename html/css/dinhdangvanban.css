@@ -1,0 +1,27 @@
+h{
+    font-size: 50px;
+    color: blueviolet;
+}
+p{
+    background-color: #7d58d3;
+    font-size:40px;
+    color:green;
+    font-family:cursive;
+}
+p1{
+    font-size:25px;
+    color:red;
+    font-family:monospace;
+}
+p2{
+    font-size: 30px;
+    color: blue;
+    font-family:"Times New Roman";
+}
+body {
+    color: #333; /* Màu xám đậm */
+  }
+div {
+    background-color: #fff;
+    color: #333;
+  }

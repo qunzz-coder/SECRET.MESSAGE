@@ -1,0 +1,47 @@
+.radio-heart input {
+    display: none; /* Ẩn radio gốc */
+}
+
+.radio-heart span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: gray;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(45deg);
+    margin: 10px;
+}
+
+.radio-heart span::before,
+.radio-heart span::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.radio-heart span::before {
+    top: -11px;
+    left: 0px;
+    width: 24px;
+    height: 30px;
+}
+
+.radio-heart span::after {
+    top: 0px;
+    left: -11px;
+    width: 30px;
+    height: 24px;
+}
+
+.radio-heart input:checked + span {
+    background-color: #e91e63;
+}
+
+.radio-heart input:checked + span::before,
+.radio-heart input:checked + span::after {
+    background-color: #e91e63;
+}
