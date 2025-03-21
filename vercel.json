@@ -1,8 +1,5 @@
 {
   "rewrites": [
     { "source": "/", "destination": "/html/w_test_web_dong.html" }
-  ],
-  "static": {
-    "public": "html"
-  }
+  ]
 }
