@@ -1,0 +1,33 @@
+import { initializeApp } from "firebase/app";
+import { getDatabase, ref, set, get } from "firebase/database";
+
+const firebaseConfig = {
+  apiKey: "API_KEY",
+  authDomain: "PROJECT_ID.firebaseapp.com",
+  databaseURL: "https://PROJECT_ID-default-rtdb.firebaseio.com",
+  projectId: "PROJECT_ID",
+  storageBucket: "PROJECT_ID.appspot.com",
+  messagingSenderId: "SENDER_ID",
+  appId: "APP_ID"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+
+export function saveData(password, message) {
+  set(ref(db, "messages/" + password), { message })
+    .then(() => console.log("Lưu thành công!"))
+    .catch((error) => console.error("Lỗi khi lưu:", error));
+}
+
+export function getMessage(password) {
+  get(ref(db, "messages/" + password))
+    .then((snapshot) => {
+      if (snapshot.exists()) {
+        console.log("Lời chúc:", snapshot.val().message);
+      } else {
+        console.log("Sai mật khẩu hoặc không có lời chúc nào.");
+      }
+    })
+    .catch((error) => console.error("Lỗi khi lấy dữ liệu:", error));
+}
